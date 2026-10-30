@@ -1,0 +1,1 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),{contrast}=require('../app.js');test('Extremos, simetría y entrada inválida',()=>{a.equal(contrast('#000000','#ffffff'),21);a.equal(contrast('#abcdef','#abcdef'),1);a.equal(contrast('#123456','#987654'),contrast('#987654','#123456'));a.throws(()=>contrast('red','#ffffff'));});
